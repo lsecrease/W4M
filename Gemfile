@@ -25,6 +25,9 @@ gem 'materialize-sass', github: 'lboogie04/materialize-sass'
 gem "haml-rails", "~> 0.9"
 gem 'haml'
 gem 'font-awesome-rails'
+gem 'bootstrap-sass', '~> 3.3.5'
+gem "autoprefixer-rails"
+gem 'font-awesome-sass'
 
 
 

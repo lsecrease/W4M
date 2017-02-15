@@ -47,6 +47,11 @@ GEM
       tzinfo (~> 1.1)
     arel (7.1.4)
     ast (2.3.0)
+    autoprefixer-rails (6.6.1)
+      execjs
+    bootstrap-sass (3.3.7)
+      autoprefixer-rails (>= 5.2.1)
+      sass (>= 3.3.4)
     builder (3.2.3)
     byebug (9.0.6)
     coffee-rails (4.2.1)
@@ -67,6 +72,8 @@ GEM
     ffi (1.9.17)
     font-awesome-rails (4.7.0.1)
       railties (>= 3.2, < 5.1)
+    font-awesome-sass (4.7.0)
+      sass (>= 3.2)
     globalid (0.3.7)
       activesupport (>= 4.1.0)
     haml (4.0.7)
@@ -205,10 +212,13 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  autoprefixer-rails
+  bootstrap-sass (~> 3.3.5)
   byebug
   coffee-rails (~> 4.2)
   coffeelint
   font-awesome-rails
+  font-awesome-sass
   haml
   haml-rails (~> 0.9)
   jbuilder (~> 2.5)
