@@ -161,7 +161,10 @@
 				// Slideshow turned off if there is only one slide
 				base.options.slideshow = 0;
 			}
-			
+//			api = base.$el.data('supersized');	
+//   base.getField = function(field){
+//    return base.options.slides[vars.current_slide][field];
+//   };
 			// Set current image
 			imageLink = (api.getField('url')) ? "href='" + api.getField('url') + "'" : "";
 			var img = $('<img src="'+api.getField('image')+'"/>');

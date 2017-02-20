@@ -16,5 +16,5 @@
 //= require bootstrap-sprockets
 //= require jquery.easing.min
 //= require jasny-bootstrap
-//= require supersized.3.2.7
+//= require main
 //= require_tree .

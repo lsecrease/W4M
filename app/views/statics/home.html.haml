@@ -6,27 +6,28 @@
       %p.intro-text Whether you’re a Pro Capper, or your typical everyday sports bettor, Wager4Me is for you.
       %p Please take a few minutes to answer the following questions.
       %div.button-group
-        %a I’m a Sports Handicapper
-        %a I’m a Sports Gambler
+        %a.handy{} I’m a Sports Handicapper
+        %a.gam{} I’m a Sports Gambler
   %br/
   %br/
   
+.cd-user-modal
+  .cd-user-modal-container
+    #cd-gam
+      %form.cd-form
+        %p.fieldset
+          %label.image-replace.cd-email{:for => "signin-email"} E-mail
+          %input#signin-email.full-width.has-padding.has-border{:placeholder => "E-mail", :type => "email"}/
+          %span.cd-error-message Error message here!
+        %p.fieldset
+          %label.image-replace.cd-password{:for => "signin-password"} Some other stuff
+          %input#signin-password.full-width.has-padding.has-border{:placeholder => "Password", :type => "text"}/
+        %p.fieldset
+          %input.full-width{:type => "submit", :value => "Login"}/
+      %p.cd-form-bottom-message
+      / <a href="#0" class="cd-close-form">Close</a>
+    / cd-login
+
+
   
-:javascript
-  jQuery(function($){
 
-  	$.supersized({
-
-  		// Functionality
-  		slide_interval :   4000,		// Length between transitions
-  		transition:   1, 			// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
-  		transition_speed		:	700,		// Speed of transition
-
-  		// Components							
-  		slide_links				:	'blank',	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
-  		slides 					:  	[			// Slideshow Images
-  			{image : 'assets/background.jpg'}
-  		]
-  				
-  	});
-  });
