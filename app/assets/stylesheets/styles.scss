@@ -123,6 +123,15 @@ html {
  }
 }
 
+select {
+    padding: 16px 20px 16px 50px;
+    width: 100%;
+    background: white;
+    border-radius: 0.25em;
+    height: 40px;
+    border: 1px solid #d2d8d8;
+}
+
 .cd-user-modal {
   position: fixed;
   top: 0;
@@ -273,7 +282,7 @@ html {
   appearance: none;
 }
 .no-touch .cd-form input[type=submit]:hover, .no-touch .cd-form input[type=submit]:focus {
-  background: #3599ae;
+  background: #4990E2;
   outline: none;
 }
 .cd-gam .hide-password {
