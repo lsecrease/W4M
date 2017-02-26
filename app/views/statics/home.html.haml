@@ -18,7 +18,6 @@
         = image_tag "w4m_logo.png", :class => "logo", :style => "margin-left: 35%;"
         %p.fieldset
           %span What sports do you sell picks for?
-          %input#signin-email.full-width.has-padding.has-border{:placeholder => "E-mail", :type => "email"}/
           %select#signin-email.full-width.has-padding.has-border
             %option NFL
             %option NBA
@@ -27,13 +26,14 @@
             %option College Basketball
         %p.fieldset
           %span Do you have a website, if so, please provide.
-          %input#signin-password.full-width.has-padding.has-border{:placeholder => "Question", :type => "text"}/
+          %input#signin-password.full-width.has-padding.has-border{:placeholder => "www.example.com", :type => "text"}/
         %p.fieldset
           %span Best Method of Communication(email or cell)
-          %label.image-replace.cd-password{:for => "signin-password"} Some other stuff
-          %input#signin-password.full-width.has-padding.has-border{:placeholder => "Question", :type => "text"}/
+          %input#signin-password.full-width.has-padding.has-border{:placeholder => "name@gmail.com, etc.", :type => "text"}/
         %p.fieldset
           %span Would you like to be featured on our site?
+          %input{:checked => "checked", :name => "feature", :type => "radio", :value => "yes"} Yes  
+          %input{:checked => "checked", :name => "feature", :type => "radio", :value => "no"} No
         %p.fieldset
           %input.full-width{:type => "submit", :value => "Submit"}/
       %p.cd-form-bottom-message 
