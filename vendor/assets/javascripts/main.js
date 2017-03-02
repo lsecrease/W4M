@@ -1,16 +1,23 @@
 jQuery(document).ready(function($){
  var formModal = $('.cd-user-modal'),
-     formHandy = formModal.find('#cd-gam'),
+     formHandy = formModal.find('#cd-handy'),
+     formGam = formModal.find('#cd-gam'),
      handyBtn  = $('.button-group');
+ 
  
 // //Open Modal
  handyBtn.on('click', function(event){
-		$(event.target).is(handyBtn) && handyBtn.children('a').toggleClass('is-visible');
-  console.log("Whatever this is ran");
+		$(event.target).is(handyBtn) && handyBtn.children(handyBtn).toggleClass('is-visible');
+  console.log("Open Modal ran");
 	});
+// handyBtn.on('click', function(event){
+//		$(event.target).is(handyBtn) && handyBtn.children('a').toggleClass('is-visible');
+//  console.log("Whatever this is ran");
+//	});
  
  	//open handy form
 	handyBtn.on('click', '.handy', handy_selected);
+ handyBtn.on('click', '.gam', gam_selected);
  
  	//close modal
 	formModal.on('click', function(event){
@@ -21,10 +28,21 @@ jQuery(document).ready(function($){
 	});
  
  function handy_selected(){
-  handyBtn.children('a').removeClass('is-visible');
+  console.log("Handy selected ran")
+  handyBtn.children(handyBtn).removeClass('is-visible');
 		formModal.addClass('is-visible');
   formHandy.addClass('is-selected');
+  formGam.removeClass('is-selected');
   console.log("handy selected ran");
+  console.log(formModal);
+	}
+ 
+ function gam_selected(){
+  handyBtn.children(handyBtn).removeClass('is-visible');
+		formModal.addClass('is-visible');
+  formGam.addClass('is-selected');
+  formHandy.removeClass('is-selected');
+  console.log("gam selected ran");
   console.log(formModal);
 	}
  

@@ -6,14 +6,14 @@
       %p.intro-text Whether you’re a Pro Capper, or your typical everyday sports bettor, Wager4Me is for you.
       %p Please take a few minutes to answer the following questions.
       %div.button-group
-        %a.handy{} I’m a Sports Handicapper
+        %a.handy I’m a Sports Handicapper
         %a.gam{} I’m a Sports Gambler
-  %br/
+  %br/ 
   %br/
   
 .cd-user-modal
   .cd-user-modal-container
-    #cd-gam
+    #cd-handy
       %form.cd-form
         = image_tag "w4m_logo.png", :class => "logo", :style => "margin-left: 35%;"
         %p.fieldset
@@ -34,6 +34,33 @@
           %span Would you like to be featured on our site?
           %input{:checked => "checked", :name => "feature", :type => "radio", :value => "yes"} Yes  
           %input{:checked => "checked", :name => "feature", :type => "radio", :value => "no"} No
+        %p.fieldset
+          %input.full-width{:type => "submit", :value => "Submit"}/
+      %p.cd-form-bottom-message 
+      / <a href="#0" class="cd-close-form">Close</a>
+
+
+    #cd-gam
+      %form.cd-form
+        = image_tag "w4m_logo.png", :class => "logo", :style => "margin-left: 35%;"
+        %p.fieldset
+          %span What sports do bet on?
+          %select#signin-email.full-width.has-padding.has-border
+            %option NFL
+            %option NBA
+            %option MLB
+            %option College Football
+            %option College Basketball
+        %p.fieldset
+          %span How many bets do you place in a given week?
+          %input#signin-password.full-width.has-padding.has-border{:placeholder => "", :type => "text"}/
+        %p.fieldset
+          %span What is the amount you wager in a given week ($50-$100, $100-250, $250-$500, $500+)
+          %input#signin-password.full-width.has-padding.has-border{:placeholder => "", :type => "text"}/
+        %p.fieldset
+          %span What do you currently dislike about your current betting situation (select all that apply:)
+          %input{:checked => "", :name => "feature", :type => "checkbox", :value => "yes"} Payouts take too long  
+          %input{:checked => "", :name => "feature", :type => "checkbox", :value => "no"} Making bets takes too much time
         %p.fieldset
           %input.full-width{:type => "submit", :value => "Submit"}/
       %p.cd-form-bottom-message 

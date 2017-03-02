@@ -185,7 +185,7 @@ select {
   display: none;
 }
 
-#cd-gam.is-selected, #cd-handy.is-selected, #cd-reset-password.is-selected {
+#cd-gam.is-selected, #cd-handy.is-selected {
   display: block;
 }
 
@@ -407,6 +407,14 @@ select {
   .cd-close-form {
     display: none;
   }
+}
+
+li {
+  background-color: #4990E2;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+  padding: 10px;
+  cursor: pointer;
 }
 
 
