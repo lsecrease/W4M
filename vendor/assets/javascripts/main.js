@@ -27,6 +27,13 @@ jQuery(document).ready(function($){
 		}	
 	});
  
+ //close modal when clicking the esc keyboard button
+	$(document).keyup(function(event){
+    	if(event.which=='27'){
+    		formModal.removeClass('is-visible');
+	    }
+    });
+ 
  function handy_selected(){
   console.log("Handy selected ran")
   handyBtn.children(handyBtn).removeClass('is-visible');
